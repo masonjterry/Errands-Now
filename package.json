@@ -1,7 +1,7 @@
 {
   "name": "Errands-Now",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "repository": "git@github.com:masonjterry/Errands-Now.git",
   "author": "Mason Terry",
   "license": "MIT",
