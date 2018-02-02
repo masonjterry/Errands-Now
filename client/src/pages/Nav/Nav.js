@@ -16,11 +16,11 @@ export default class Nav extends React.Component {
   render() {
     return (
       <div>
-        <nav style={style} className="mdc-tool-bar">
+        <nav style={style} className="mdc-tab-bar">
           <Link style={style.linkStyle} className="mdc-tab" to="/"><strong>ErrandsNow!</strong></Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/adderrand">My Errands</Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/login">Login</Link>
-          <span style={style.linkStyle} className="mdc-tab-bar__indicator"></span>
+          <span className="mdc-tab-bar__indicator"></span>
         </nav>
       </div>
 
