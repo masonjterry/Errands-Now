@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const style = {
-  margin: 20,
+  margin: "20px auto",
   textAlign: "center",
+  border: "2px solid gray",
+  borderRadius: 150,
+  backgroundColor: "rgba(250, 250, 250, 1)",
+  maxWidth: 600,
+  padding: 20,
   buttonStyle: {
     backgroundColor: "#64B5F6",
     marginRight: 5
