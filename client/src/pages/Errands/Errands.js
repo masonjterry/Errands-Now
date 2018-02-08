@@ -24,7 +24,7 @@ const style = {
       borderRadius: 15,
       border: "2px solid gray",
       textAlign: "center",
-      maxWidth: 500,
+      maxWidth: 600,
       margin: "0 auto"
     }
   },
@@ -32,7 +32,7 @@ const style = {
     backgroundColor: "#64B5F6",
     border: "2px solid gray",
     borderRadius: 15,
-    maxWidth: 300,
+    maxWidth: 400,
     margin: "20px auto",
     color: "#fff"
   }
