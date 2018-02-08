@@ -6,7 +6,7 @@ const style = {
   margin: "20px auto",
   textAlign: "center",
   border: "2px solid gray",
-  borderRadius: 150,
+  borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",
   maxWidth: 600,
   padding: 20,  buttonStyle: {
@@ -21,7 +21,7 @@ const style = {
       backgroundColor: "rgba(200, 200, 200, .8)"
     },
     content: {
-      borderRadius: 150,
+      borderRadius: 15,
       border: "2px solid gray",
       textAlign: "center",
       maxWidth: 500,
@@ -31,9 +31,10 @@ const style = {
   displayStyle: {
     backgroundColor: "#64B5F6",
     border: "2px solid gray",
-    borderRadius: 150,
-    maxWidth: 200,
-    margin: "20px auto"
+    borderRadius: 15,
+    maxWidth: 300,
+    margin: "20px auto",
+    color: "#fff"
   }
 }
 
@@ -106,9 +107,9 @@ export default class AddErrands extends React.Component {
         {/* display errands */}
         {this.state.errandName ?
         <div style={style.displayStyle}>
-          <p>{this.state.errandName}</p>
-          <p>{this.state.location}</p>
-          <p>{this.state.errandInstructions}</p>
+          <h2>{this.state.errandName}</h2>
+          <p>Location: {this.state.location}</p>
+          <p>Instructions: {this.state.errandInstructions}</p>
         </div>
         : ""}
       </div>

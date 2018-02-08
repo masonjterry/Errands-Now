@@ -5,7 +5,7 @@ const style = {
   margin: "20px auto",
   textAlign: "center",
   border: "2px solid gray",
-  borderRadius: 150,
+  borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",
   maxWidth: 600,
   padding: 20,
