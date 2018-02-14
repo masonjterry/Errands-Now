@@ -1,1 +1,2 @@
-export { default } from "./Nav";
+export { Nav } from "./Nav";
+export { RunnerNav } from "./RunnerNav";

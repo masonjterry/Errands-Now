@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Nav from "../Nav/Nav";
+import RunnerNav from "../Nav/RunnerNav";
 
 const style = {
   margin: "20px auto",
@@ -39,7 +39,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <RunnerNav />
         <div style={style}>
           <h1>Please Login</h1>
           <hr />
@@ -51,7 +51,7 @@ export default class Login extends React.Component {
               <input type="password" name="password" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.password} placeholder="password" />
             </div><br />
           <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Login</button>
-          <Link style={style.buttonStyle} to="/newuser" className="mdc-button mdc-button--raised">New User</Link>
+          <Link style={style.buttonStyle} to="/runner/newrunner" className="mdc-button mdc-button--raised">New Runner</Link>
           </form>
         </div>
       </div>

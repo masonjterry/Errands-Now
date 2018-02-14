@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Nav/Nav";
+import RunnerNav from "../Nav/RunnerNav";
 
 const style = {
   margin: "20px auto",
@@ -44,7 +44,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <RunnerNav />
         <div style={style}>
           <h1>Please Enter Your Information</h1>
           <hr />
