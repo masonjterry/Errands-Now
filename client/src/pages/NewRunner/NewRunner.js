@@ -25,7 +25,8 @@ export default class Login extends React.Component {
       address: "",
       city: "",
       state: "",
-      zipCode: ""
+      zipCode: "",
+      birthday: "",
     }
   }
 
