@@ -74,6 +74,9 @@ export default class Login extends React.Component {
           <div className="mdc-text-field--fullwidth">
               <input type="text" name="zipCode" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.zipCode} placeholder="Zip Code" />
             </div><br />
+          <div className="mdc-text-field--fullwidth">
+              <input type="text" name="birthday" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.birthday} placeholder="Birthday MM/DD/YYYY" />
+            </div><br />
           <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Create</button>
           </form>
         </div>
