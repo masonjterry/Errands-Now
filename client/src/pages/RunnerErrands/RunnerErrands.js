@@ -18,20 +18,12 @@ const style = {
 export default class AddErrands extends React.Component {
 
   state = {
-    modalIsOpen: false,
     errandName: "",
     location: "",
     extendedLocation: "",
     errandInstructions: ""
   };
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true });
-  };
-
-  closeModal = () => {
-    this.setState({ modalIsOpen: false });
-  };
 
   handleChange = (e) => {
     const {name, value} = e.target;
@@ -44,7 +36,6 @@ export default class AddErrands extends React.Component {
   handleClick = (e) => {
     e.preventDefault();
     console.log(this.state);
-    this.setState({ modalIsOpen: false });
   }
 
   render() {
