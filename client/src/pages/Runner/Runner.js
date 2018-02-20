@@ -25,7 +25,7 @@ export default class Runner extends React.Component {
             <h1>ErrandsNow! Runners</h1>
             <p>Do you want to be a runner? Create an account today!</p>
             <Link to="/runner/newrunner" style={style.buttonStyle} className="mdc-button mdc-button--raised">New User</Link>
-            <p>If you already have an account, please login</p>
+            <p>Already have an account? Click to login</p>
             <Link to="/runner/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Login</Link>
           </div>
       </div>
