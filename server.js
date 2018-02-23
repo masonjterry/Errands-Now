@@ -3,6 +3,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -21,9 +22,11 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/errands"
 );
 
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+app.use(routes);
+
+// app.get("*", function(req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.listen(PORT, function() {
   console.log(`Listening on port ${PORT}!`);
