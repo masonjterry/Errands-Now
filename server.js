@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -16,13 +15,13 @@ app.use(bodyParser.json());
 
 app.use(express.static("client/build"));
 
+app.use(routes);
+
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/errands"
 );
-
-app.use(routes);
 
 app.listen(PORT, function() {
   console.log(`Listening on port ${PORT}!`);
