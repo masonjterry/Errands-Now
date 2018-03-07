@@ -21,7 +21,7 @@ export default class RunnerNav extends React.Component {
           <Link style={style.linkStyle} className="mdc-tab" to="/runner"><strong>ErrandsNow!</strong></Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/runner/errands">Errands Page</Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/runner/errands/:myerrands">Errands To Run</Link>
-          <Link style={style.linkStyle} className="mdc-tab" to="/runner/login">Login</Link>
+          <Link style={style.linkStyle} className="mdc-tab" to="/runner/login">Log In</Link>
           <span className="mdc-tab-bar__indicator"></span>
         </nav>
       </div>

@@ -23,10 +23,10 @@ export default class Runner extends React.Component {
         <RunnerNav />
           <div style={style}>
             <h1>ErrandsNow! Runners</h1>
-            <p>Do you want to be a runner? Create an account today!</p>
+            <p>Do you want to be a runner? Create an account today.</p>
             <Link to="/runner/newrunner" style={style.buttonStyle} className="mdc-button mdc-button--raised">New User</Link>
-            <p>Already have an account? Click to login</p>
-            <Link to="/runner/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Login</Link>
+            <p>Already have an account? Click to log in.</p>
+            <Link to="/runner/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Log in</Link>
           </div>
       </div>
     );

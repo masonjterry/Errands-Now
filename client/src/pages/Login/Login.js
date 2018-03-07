@@ -41,7 +41,7 @@ export default class Login extends React.Component {
       <div>
         <Nav />
         <div style={style}>
-          <h1>Please Login</h1>
+          <h1>Please Log In</h1>
 	  <hr />
 	  <form>
             <div className="mdc-text-field">
@@ -50,7 +50,7 @@ export default class Login extends React.Component {
             <div className="mdc-text-field">
               <input type="password" name="password" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.password} placeholder="password" />
             </div><br />
-          <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Login</button>
+          <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Log In</button>
           <Link style={style.buttonStyle} to="/newuser" className="mdc-button mdc-button--raised">New User</Link>
           </form>
 	 </div>

@@ -25,10 +25,10 @@ export default class Home extends React.Component {
           <h1>Welcome to ErrandsNow!</h1>
           <p>We know life is busy and your list of things to do keeps getting longer.</p>
           <p>Sign up today and we can help make your list smaller!</p>
-          <Link to="/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Login</Link>
+          <Link to="/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Log In</Link>
           <Link to="/newuser" style={style.buttonStyle} className="mdc-button mdc-button--raised">New User</Link>
-          <p>Are you a runner? Or you want to be?</p>
-          <Link to="/runner" style={style.buttonStyle} className="mdc-button mdc-button--raised">Runner</Link>
+          <p>Are you a runner? Or do you want to be?</p>
+          <Link to="/runner" style={style.buttonStyle} className="mdc-button mdc-button--raised">Runner Log In</Link>
         </div>
       </div>
     );

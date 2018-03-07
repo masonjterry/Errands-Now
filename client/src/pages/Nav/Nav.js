@@ -20,7 +20,7 @@ export default class Nav extends React.Component {
         <nav style={style} className="mdc-tab-bar">
           <Link style={style.linkStyle} className="mdc-tab" to="/"><strong>ErrandsNow!</strong></Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/adderrand">My Errands</Link>
-          <Link style={style.linkStyle} className="mdc-tab" to="/login">Login</Link>
+          <Link style={style.linkStyle} className="mdc-tab" to="/login">Log In</Link>
           <span className="mdc-tab-bar__indicator"></span>
         </nav>
       </div>
