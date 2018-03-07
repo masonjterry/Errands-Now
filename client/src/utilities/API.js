@@ -11,7 +11,7 @@ export default {
   deleteErrand: function(id) {
     return axios.post("/api/errands/" + id);
   },
-  saveErrand: function(data) {
-    return axios.post("/api/errand", data);
+  createErrand: function(data) {
+    return axios.post("/api/errands", data);
   }
 }

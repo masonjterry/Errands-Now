@@ -70,13 +70,13 @@ export default class AddErrands extends React.Component {
     e.preventDefault();
     console.log(this.state);
     this.setState({ modalIsOpen: false });
-    if (this.state.errandName && this.state.errandInstructions) {
-      API.saveErrand({
+    if (this.state.errandName && this.state.errandInstructions && this.state.location) {
+      API.createErrand({
         errandName: this.state.errandName,
         location: this.state.location,
-        extendedLocation: ,
+        extendedLocation: this.state.extendedLocation,
         errandInstructions: this.state.errandInstructions
-      });
+      }).then(res => alert("submitted"));
     }
   }
 
