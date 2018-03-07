@@ -9,7 +9,7 @@ const style = {
   textAlign: "center",
   border: "2px solid gray",
   borderRadius: 15,
-  backgroundColor: "rgba(250, 250, 250, 1)",
+  backgroundColor: "rgba(220, 220, 220, 1)",
   maxWidth: 600,
   padding: 20,  buttonStyle: {
     backgroundColor: "#64B5F6",
