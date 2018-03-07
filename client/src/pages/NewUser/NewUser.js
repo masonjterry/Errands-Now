@@ -39,18 +39,22 @@ export default class Login extends React.Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    API.createUser({
-      name: this.state.name,
-      email: this.state.email,
-      username: this.state.username,
-      password: this.state.password,
-      address: this.state.address,
-      city: this.state.city,
-      state: this.state.state,
-      zipCode: this.state.zipCode
-    }).then(res => {
-      this.props.history.push("/adderrand");
-    });
+    if (!this.state.name || !this.state.email || !this.state.username || !this.state.password || !this.state.address || !this.state.city || !this.state.state || !this.state.zipCode) {
+      alert("please fill in all forms");
+    } else {
+      API.createUser({
+        name: this.state.name,
+        email: this.state.email,
+        username: this.state.username,
+        password: this.state.password,
+        address: this.state.address,
+        city: this.state.city,
+        state: this.state.state,
+        zipCode: this.state.zipCode
+      }).then(res => {
+        this.props.history.push("/adderrand");
+      });
+    }
   }
 
   render() {
