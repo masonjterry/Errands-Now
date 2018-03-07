@@ -13,5 +13,8 @@ export default {
   },
   createErrand: function(data) {
     return axios.post("/api/errands", data);
+  },
+  createUser: function(data) {
+    return axios.post("/api/user", data);
   }
 }

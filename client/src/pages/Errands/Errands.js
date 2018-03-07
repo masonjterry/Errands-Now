@@ -70,8 +70,6 @@ export default class AddErrands extends React.Component {
   listErrands = () => {
     API.listErrands()
     .then(res => {
-      console.log("res", res);
-      console.log("data", res.data);
       this.setState({ errands: res.data });
     }).catch(err => {
       console.log(err);
@@ -134,7 +132,7 @@ export default class AddErrands extends React.Component {
             </form>
           </Modal>
           {/* display errands */}
-          {this.state.errands ?
+          {this.state.errands.length ?
             this.state.errands.map(errands =>
           <div style={style.displayStyle} key={errands._id}>
             <h2>{errands.errandName}</h2>

@@ -34,6 +34,7 @@ export default class Login extends React.Component {
   handleClick = (e) => {
     e.preventDefault();
     console.log(this.state);
+    this.props.history.push("/adderrand");
   }
 
   render() {

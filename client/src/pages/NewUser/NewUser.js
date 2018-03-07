@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Nav/Nav";
+import API from "../../utilities/API";
 
 const style = {
   margin: "20px auto",
@@ -38,7 +39,18 @@ export default class Login extends React.Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    console.log(this.state);
+    API.createUser({
+      name: this.state.name,
+      email: this.state.email,
+      username: this.state.username,
+      password: this.state.password,
+      address: this.state.address,
+      city: this.state.city,
+      state: this.state.state,
+      zipCode: this.state.zipCode
+    }).then(res => {
+      this.props.history.push("/adderrand");
+    });
   }
 
   render() {
