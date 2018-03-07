@@ -22,7 +22,7 @@ export default class Home extends React.Component {
       <div>
         <Nav />
         <div style={style}>
-          <h1>Welcome to ErrandsNow!</h1>
+          <h1>ErrandsNow!</h1>
           <p>We know life is busy and your list of things to do keeps getting longer.</p>
           <p>Sign up today and we can help make your list smaller!</p>
           <Link to="/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Log In</Link>

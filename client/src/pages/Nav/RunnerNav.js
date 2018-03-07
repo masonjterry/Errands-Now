@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const style = {
   backgroundColor: "#64B5F6",
   height: 60,
-  width: "100%",
   linkStyle: {
     color: "#fff",
     lineHeight: 3,

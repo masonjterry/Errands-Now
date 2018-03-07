@@ -2,6 +2,7 @@ import React from "react";
 import Modal from "react-modal";
 import Autocomplete from "react-google-autocomplete";
 import Nav from "../Nav/Nav";
+import API from "../../utilities/API";
 
 const style = {
   margin: "20px auto",
@@ -69,6 +70,14 @@ export default class AddErrands extends React.Component {
     e.preventDefault();
     console.log(this.state);
     this.setState({ modalIsOpen: false });
+    if (this.state.errandName && this.state.errandInstructions) {
+      API.saveErrand({
+        errandName: this.state.errandName,
+        location: this.state.location,
+        extendedLocation: ,
+        errandInstructions: this.state.errandInstructions
+      });
+    }
   }
 
   render() {
