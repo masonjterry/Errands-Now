@@ -13,6 +13,6 @@ const runner = new Schema({
   birthday: { type: String, required: true }
 });
 
-const Runner = mongoose.mogel("Runner", runner);
+const Runner = mongoose.model("Runner", runner);
 
 module.exports = Runner;
