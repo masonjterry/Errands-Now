@@ -1,7 +1,7 @@
 const db = require("../models");
 
 module.exports = {
-  findErrands: function(req, res) {
+  listErrands: function(req, res) {
     db.Errand
     .find(req.query)
     .sort({ date: -1 })

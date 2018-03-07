@@ -47,7 +47,8 @@ export default class AddErrands extends React.Component {
     errandName: "",
     location: "",
     extendedLocation: "",
-    errandInstructions: ""
+    errandInstructions: "",
+    errands: []
   };
 
   openModal = () => {
@@ -66,6 +67,22 @@ export default class AddErrands extends React.Component {
     })
   }
 
+  listErrands = () => {
+    API.listErrands()
+    .then(res => {
+      console.log("res", res);
+      console.log("data", res.data);
+      this.setState({ errands: res.data });
+    }).catch(err => {
+      console.log(err);
+      alert("something went wrong");
+    });
+  }
+
+  componentDidMount = () => {
+    this.listErrands();
+  }
+
   handleClick = (e) => {
     e.preventDefault();
     console.log(this.state);
@@ -76,7 +93,7 @@ export default class AddErrands extends React.Component {
         location: this.state.location,
         extendedLocation: this.state.extendedLocation,
         errandInstructions: this.state.errandInstructions
-      }).then(res => alert("submitted"));
+      }).then(res => this.listErrands());
     }
   }
 
@@ -117,13 +134,14 @@ export default class AddErrands extends React.Component {
             </form>
           </Modal>
           {/* display errands */}
-          {this.state.errandName ?
-          <div style={style.displayStyle}>
-            <h2>{this.state.errandName}</h2>
-            <p>Location: {this.state.location}</p>
-            <p>Instructions: {this.state.errandInstructions}</p>
-          </div>
-          : ""}
+          {this.state.errands ?
+            this.state.errands.map(errands =>
+          <div style={style.displayStyle} key={errands._id}>
+            <h2>{errands.errandName}</h2>
+            <p>Location: {errands.location}</p>
+            <p>Instructions: {errands.errandInstructions}</p>
+          </div>)
+         : <p>Click to add errands</p>}
         </div>
       </div>
     );
