@@ -1,5 +1,6 @@
 import React from "react";
 import RunnerNav from "../Nav/RunnerNav";
+import API from "../../utilities/API";
 
 const style = {
   margin: "20px auto",
@@ -43,7 +44,19 @@ export default class Login extends React.Component {
       alert("please fill in all fields");
     } else {
       console.log(this.state);
-      this.props.history.push("/runner/errands");
+      API.createRunner({
+        name: this.state.name,
+        email: this.state.email,
+        username: this.state.username,
+        password: this.state.password,
+        address: this.state.address,
+        city: this.state.city,
+        state: this.state.state,
+        zipCode: this.state.zipCode,
+        birthday: this.state.birthday
+      }).then(res => {
+        this.props.history.push("/runner/errands");
+      })
     }
   }
 

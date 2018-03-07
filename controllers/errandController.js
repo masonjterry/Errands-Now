@@ -19,5 +19,11 @@ module.exports = {
     .create(req.body)
     .then(data => res.json(data))
     .catch(err => res.status(422).json(err));
+  },
+  createRunner: function(req, res) {
+    db.Runner
+    .create(req.body)
+    .then(data => res.json(data))
+    .catch(err => res.status(422).json(err));
   }
 }

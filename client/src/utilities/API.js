@@ -16,5 +16,8 @@ export default {
   },
   createUser: function(data) {
     return axios.post("/api/user", data);
+  },
+  createRunner: function(data) {
+    return axios.post("/api/runner", data);
   }
 }
