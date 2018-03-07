@@ -1,5 +1,6 @@
 import React from "react";
 import RunnerNav from "../Nav/RunnerNav";
+import API from "../../utilities/API";
 
 const style = {
   margin: "20px auto",
@@ -12,40 +13,37 @@ const style = {
   buttonStyle: {
     backgroundColor: "#64B5F6",
     marginTop: 5
+  },
+  displayStyle: {
+    backgroundColor: "#64B5F6",
+    border: "2px solid gray",
+    borderRadius: 15,
+    maxWidth: 400,
+    margin: "20px auto",
+    color: "#fff"
   }
 }
 
 export default class AddErrands extends React.Component {
 
   state = {
-    modalIsOpen: false,
-    errandName: "",
-    location: "",
-    extendedLocation: "",
-    errandInstructions: ""
+    errands: []
   };
 
-  openModal = () => {
-    this.setState({ modalIsOpen: true });
-  };
-
-  closeModal = () => {
-    this.setState({ modalIsOpen: false });
-  };
-
-  handleChange = (e) => {
-    const {name, value} = e.target;
-
-    this.setState({
-      [name]: value
-    })
+  listErrands = () => {
+    API.listErrands()
+    .then(res => {
+      this.setState({ errands: res.data });
+    }).catch(err => {
+      console.log(err);
+      alert("something went wrong");
+    });
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
-    console.log(this.state);
-    this.setState({ modalIsOpen: false });
+  componentDidMount = () => {
+    this.listErrands();
   }
+
 
   render() {
     return (
@@ -56,12 +54,13 @@ export default class AddErrands extends React.Component {
           <h1>Errands List</h1>
           <hr />
           {/* display errands */}
-          {this.state.errandName ?
-          <div style={style.displayStyle}>
-            <h2>{this.state.errandName}</h2>
-            <p>Location: {this.state.location}</p>
-            <p>Instructions: {this.state.errandInstructions}</p>
-          </div>
+          {this.state.errands.length ?
+            this.state.errands.map(errands =>
+          <div style={style.displayStyle} key={errands._id}>
+            <h2>{errands.errandName}</h2>
+            <p>Location: {errands.location}</p>
+            <p>Instructions: {errands.errandInstructions}</p>
+          </div>)
           : <p>There are no current errands available. Check back later.</p>}
         </div>
       </div>
