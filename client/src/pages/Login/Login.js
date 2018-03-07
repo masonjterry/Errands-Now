@@ -34,7 +34,7 @@ export default class Login extends React.Component {
   handleClick = (e) => {
     e.preventDefault();
     if (!this.state.username || !this.state.password) {
-      alert("please fill in all forms");
+      alert("please fill in all fields");
     } else {
       console.log(this.state);
       this.props.history.push("/adderrand");
