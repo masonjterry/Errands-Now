@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const style = {
-  backgroundColor: "",
+  backgroundColor: "#64B5F6",
   height: 60,
-  marginTop: 20,
   linkStyle: {
-    color: "#000",
+    color: "#fff",
     lineHeight: 3,
-    fontSize: "1.5rem"
+    fontSize: "1.3rem"
   }
 }
 
