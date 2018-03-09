@@ -11,7 +11,8 @@ const style = {
   maxWidth: 600,
   padding: 20,
   buttonStyle: {
-    backgroundColor: "#64B5F6"
+    backgroundColor: "#FFF176",
+    color: "#000"
   }
 }
 

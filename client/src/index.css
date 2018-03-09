@@ -1,9 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: rgba(250, 250, 250, .8);
-  background-image: url("images/To-Do-List.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #FFF176;
 }

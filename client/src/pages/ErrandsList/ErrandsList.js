@@ -11,16 +11,17 @@ const style = {
   maxWidth: 600,
   padding: 20,
   buttonStyle: {
-    backgroundColor: "#64B5F6",
-    marginTop: 5
+    backgroundColor: "#FFF176",
+    marginTop: 5,
+    color: "#000",
   },
   displayStyle: {
-    backgroundColor: "#64B5F6",
+    backgroundColor: "#FFF176",
     border: "2px solid gray",
     borderRadius: 15,
     maxWidth: 400,
     margin: "20px auto",
-    color: "#fff"
+    color: "#000"
   }
 }
 

@@ -12,8 +12,9 @@ const style = {
   backgroundColor: "rgba(250, 250, 250, 1)",
   maxWidth: 600,
   padding: 20,  buttonStyle: {
-    backgroundColor: "#64B5F6",
-    marginTop: 5
+    backgroundColor: "#FFF176",
+    marginTop: 5,
+    color: "#000",
   },
   formStyle: {
     marginTop: 20
@@ -31,12 +32,12 @@ const style = {
     }
   },
   displayStyle: {
-    backgroundColor: "#64B5F6",
+    backgroundColor: "#FFF176",
     border: "2px solid gray",
     borderRadius: 15,
     maxWidth: 400,
     margin: "20px auto",
-    color: "#fff"
+    color: "#000"
   }
 }
 
