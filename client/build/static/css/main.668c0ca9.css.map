@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,yBACA,6BAAiC","file":"static/css/main.668c0ca9.css","sourcesContent":["body {\n  background-color: #FFF176;\n  font-family: \"Gloria Hallelujah\";\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
