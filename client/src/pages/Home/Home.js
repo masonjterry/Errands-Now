@@ -11,6 +11,10 @@ const style = {
     backgroundColor: "#fff",
     marginRight: 5,
     color: "#000"
+  },
+  styleHeader: {
+    fontSize: "4rem",
+    textAlign: "center"
   }
 }
 
@@ -18,7 +22,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <h1 style={style.styleHeader}><strong>ERRANDS</strong>Now!</h1>
         <div style={style}>
           <p>Life is busy</p>
           <p>We can help</p>
