@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const style = {
-  fontSize: "2rem",
+  fontSize: "1.8rem",
   textAlign: "center",
   buttonStyle: {
     backgroundColor: "#fff",

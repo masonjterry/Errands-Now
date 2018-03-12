@@ -7,7 +7,7 @@ const style = {
     fontFamily: "Fugaz One",
     color: "#000",
     lineHeight: 3,
-    fontSize: "3rem"
+    fontSize: "2.5rem"
   }
 }
 
