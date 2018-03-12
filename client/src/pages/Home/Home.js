@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 const style = {
+  maxWidth: 500,
   fontSize: "1.8rem",
+  margin: "0 auto",
   fontFamily: "Gloria Hallelujah",
-  textAlign: "center",
   buttonStyle: {
     backgroundColor: "#fff",
     marginRight: 5,
