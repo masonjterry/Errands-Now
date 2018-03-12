@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const style = {
-  fontSize: "2.5rem",
-  margin: "100px auto",
+  fontSize: "2rem",
   textAlign: "center",
   buttonStyle: {
     backgroundColor: "#fff",
@@ -11,8 +10,10 @@ const style = {
     color: "#000"
   },
   styleHeader: {
-    fontSize: "4rem",
-    textAlign: "center"
+    fontSize: "6rem",
+    fontFamily: "Fugaz One",
+    marginTop: 20,
+    textShadow: "2px 2px #ccc"
   }
 }
 
@@ -21,11 +22,11 @@ export default class Runner extends React.Component {
   render() {
     return(
       <div>
-        <h1 style={style.styleHeader}><strong>ERRANDS</strong>Now! Runners</h1>
+        <h1 style={style.styleHeader}><strong>Errands</strong>NOW! Runners</h1>
         <div style={style}>
-          <p>Want to be a runner?</p>
+          <p>Want to be an errand runner?</p>
           <Link to="/runner/newrunner" style={style.buttonStyle} className="mdc-button mdc-button--raised">New User</Link>
-          <p>Already a runner? Log in.</p>
+          <p>Already an errand runner? Log in.</p>
           <Link to="/runner/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Log in</Link>
         </div>
       </div>

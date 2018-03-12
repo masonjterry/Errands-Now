@@ -13,9 +13,9 @@ const style = {
   },
   styleHeader: {
     fontSize: "6rem",
-    // textAlign: "center"
-    fontFamily: "Lobster",
-    marginTop: 20
+    fontFamily: "Fugaz One",
+    marginTop: 20,
+    textShadow: "2px 2px #ccc"
   }
 }
 
@@ -23,7 +23,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={style.styleHeader}><strong>Errands</strong>Now!</h1>
+        <h1 style={style.styleHeader}><strong>Errands</strong>NOW!</h1>
         <div style={style}>
           <p>Life is busy.</p>
           <p>We can help.</p>
