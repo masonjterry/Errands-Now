@@ -1,11 +1,9 @@
 import React from "react";
-import RunnerNav from "../Nav/RunnerNav";
 import API from "../../utilities/API";
 
 const style = {
   margin: "20px auto",
   textAlign: "center",
-  // border: "2px solid gray",
   boxShadow: "2px 2px 2px",
   borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",
@@ -100,7 +98,7 @@ export default class Login extends React.Component {
           <div className="mdc-text-field--fullwidth">
               <input type="text" name="birthday" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.birthday} placeholder="Birthday MM/DD/YYYY" />
             </div><br />
-          <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Create</button>
+          <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Submit</button>
           </form>
         </div>
       </div>

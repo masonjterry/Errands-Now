@@ -7,7 +7,6 @@ import API from "../../utilities/API";
 const style = {
   margin: "20px auto",
   textAlign: "center",
-  // border: "2px solid gray",
   boxShadow: "2px 2px 2px",
   borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",

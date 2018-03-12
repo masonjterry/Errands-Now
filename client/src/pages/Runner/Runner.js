@@ -1,9 +1,8 @@
 import React from "react";
-import RunnerNav from "../Nav/RunnerNav";
 import { Link } from "react-router-dom";
 
 const style = {
-  fontSize: "3rem",
+  fontSize: "2.5rem",
   margin: "100px auto",
   textAlign: "center",
   buttonStyle: {
