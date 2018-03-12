@@ -12,14 +12,19 @@ const style = {
 
 
 export default class RunnerNav extends React.Component {
+
+  handleClick = () => {
+    localStorage.clear();
+  }
+
   render() {
     return (
       <div>
         <nav style={style} className="mdc-tab-bar">
-          <Link style={style.linkStyle} className="mdc-tab" to="/runner"><strong>ErrandsNow!</strong></Link>
+          <Link style={style.linkStyle} className="mdc-tab" to="/runner"><strong>ERRANDS</strong>Now!</Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/runner/errands">Errands Page</Link>
           <Link style={style.linkStyle} className="mdc-tab" to="/runner/errands/:myerrands">Errands To Run</Link>
-          <Link style={style.linkStyle} className="mdc-tab" to="/runner/login">Log In</Link>
+          <Link style={style.linkStyle} className="mdc-tab" to="/runner/login" onClick={this.handleClick}>Log Out</Link>
           <span className="mdc-tab-bar__indicator"></span>
         </nav>
       </div>

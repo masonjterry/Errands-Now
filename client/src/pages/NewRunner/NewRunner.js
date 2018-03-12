@@ -14,6 +14,10 @@ const style = {
   buttonStyle: {
     backgroundColor: "#FFF176",
     color: "#000"
+  },
+  styleHeader: {
+    fontSize: "4rem",
+    textAlign: "center"
   }
 }
 
@@ -64,7 +68,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <RunnerNav />
+        <h1 style={style.styleHeader}><strong>ERRANDS</strong>Now! Runners</h1>
         <div style={style}>
           <h1>Please Enter Your Information</h1>
           <hr />

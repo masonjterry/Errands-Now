@@ -14,6 +14,10 @@ const style = {
     backgroundColor: "#FFF176",
     marginRight: 5,
     color: "#000"
+  },
+  styleHeader: {
+    fontSize: "4rem",
+    textAlign: "center"
   }
 }
 
@@ -45,11 +49,11 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
+        <h1 style={style.styleHeader}><strong>ERRANDS</strong>Now!</h1>
         <div style={style}>
           <h1>Please Log In</h1>
-	  <hr />
-	  <form>
+	        <hr />
+	        <form>
             <div className="mdc-text-field">
               <input type="text" name="username" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.username} placeholder="username" />
             </div><br />
@@ -59,7 +63,7 @@ export default class Login extends React.Component {
           <button style={style.buttonStyle} onClick={this.handleClick} className="mdc-button mdc-button--raised">Log In</button>
           <Link style={style.buttonStyle} to="/newuser" className="mdc-button mdc-button--raised">New User</Link>
           </form>
-	 </div>
+	      </div>
       </div>
     );
   }
