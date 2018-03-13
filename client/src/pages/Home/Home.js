@@ -83,7 +83,7 @@ export default class Home extends React.Component {
         <div style={style.divStyle}>
           <br />
           <br />
-          <Link to="/runner" style={style.styleRunner} className="mdc-button mdc-button--raised">Errand Runners</Link>
+          <Link to="/runner" style={style.styleRunner} className="mdc-button mdc-button--raised">Errand Runners Log In</Link>
         </div>
         <Modal style={style.modalStyle} isOpen={this.state.modalIsOpen} ariaHideApp={false}>
           <button onClick={this.closeModal} style={style.closeBtn}>X</button>
