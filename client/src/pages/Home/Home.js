@@ -18,7 +18,7 @@ const style = {
     backgroundColor: "#FFF176",
     color: "#000",
     fontFamily: "Gloria Hallelujah",
-    margin: "5% 10%"
+    margin: "5%"
   },
   styleHeader: {
     fontSize: "4rem",
@@ -46,7 +46,7 @@ const style = {
     content: {
       borderRadius: 15,
       border: "2px solid gray",
-      textAlign: "center",
+      textAlign: "",
       maxWidth: 600,
       margin: "0 auto"
     }
