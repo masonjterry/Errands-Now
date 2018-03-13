@@ -11,10 +11,11 @@ const style = {
   borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",
   maxWidth: 600,
-  padding: 20,  buttonStyle: {
+  padding: 20,
+  buttonStyle: {
     backgroundColor: "#FFF176",
     marginTop: 5,
-    color: "#000",
+    color: "#000"
   },
   formStyle: {
     marginTop: 20
@@ -33,12 +34,17 @@ const style = {
   },
   displayStyle: {
     backgroundColor: "#FFF176",
-    // border: "2px solid gray",
     boxShadow: "2px 2px 2px",
     borderRadius: 15,
     padding: 10,
     maxWidth: 400,
     margin: "20px auto",
+    color: "#000"
+  },
+  submitBtn: {
+    fontFamily: "Gloria Hallelujah",
+    backgroundColor: "#FFF176",
+    marginTop: 5,
     color: "#000"
   }
 }
@@ -131,7 +137,7 @@ export default class AddErrands extends React.Component {
               <div className="mdc-text-field--fullwidth">
                 <input name="errandInstructions" className="mdc-text-field__input" onChange={this.handleChange} value={this.state.errandInstructions} placeholder="Instructions" />
               </div>
-              <button style={style.buttonStyle} className="mdc-button mdc-button--raised" onClick={this.handleClick}>Add</button>
+              <button style={style.submitBtn} className="mdc-button mdc-button--raised" onClick={this.handleClick}>Add</button>
             </form>
           </Modal>
           {/* display errands */}

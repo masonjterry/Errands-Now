@@ -8,14 +8,16 @@ const style = {
   borderRadius: 15,
   backgroundColor: "rgba(250, 250, 250, 1)",
   maxWidth: 600,
-  padding: 20,  buttonStyle: {
+  padding: 20,
+  buttonStyle: {
     backgroundColor: "#FFF176",
     marginRight: 5,
-    color: "#000"
+    color: "#000",
+    fontFamily: "Gloria Hallelujah"
   },
   styleHeader: {
     fontSize: "6rem",
-    fontFamily: "Fugaz One",
+    fontFamily: "Yellowtail",
     marginTop: 20,
     textShadow: "2px 2px #ccc"
   }
@@ -49,7 +51,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={style.styleHeader}><strong>Errands</strong>NOW!</h1>
+        <h1 style={style.styleHeader}><strong>Errands</strong>NOW</h1>
         <div style={style}>
           <h1>Please Log In</h1>
 	        <hr />

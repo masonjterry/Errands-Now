@@ -11,11 +11,11 @@ const style = {
     backgroundColor: "#fff",
     marginRight: 5,
     color: "#000",
-    fontFamily: "serif"
+    fontFamily: "Gloria Hallelujah"
   },
   styleHeader: {
     fontSize: "6rem",
-    fontFamily: "Fugaz One",
+    fontFamily: "Yellowtail",
     marginTop: 20,
     textShadow: "2px 2px #ccc"
   },
@@ -27,7 +27,7 @@ const style = {
     backgroundColor: "#009E4E",
     marginRight: 5,
     color: "#fff",
-    
+    fontFamily: "Gloria Hallelujah"
   },
   divStyle: {
     textAlign: "right"

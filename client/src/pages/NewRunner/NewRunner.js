@@ -11,11 +11,12 @@ const style = {
   padding: 20,
   buttonStyle: {
     backgroundColor: "#FFF176",
-    color: "#000"
+    color: "#000",
+    fontFamily: "Gloria Hallelujah"
   },
   styleHeader: {
     fontSize: "6rem",
-    fontFamily: "Fugaz One",
+    fontFamily: "Yellowtail",
     marginTop: 20,
     textShadow: "2px 2px #ccc"
   }
@@ -68,7 +69,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={style.styleHeader}><strong>Errands</strong>NOW! Runners</h1>
+        <h1 style={style.styleHeader}><strong>Errands</strong>NOW Runners</h1>
         <div style={style}>
           <h1>Please Enter Your Information</h1>
           <hr />
