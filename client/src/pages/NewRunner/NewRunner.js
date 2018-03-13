@@ -15,7 +15,7 @@ const style = {
     fontFamily: "Gloria Hallelujah"
   },
   styleHeader: {
-    fontSize: "6rem",
+    fontSize: "4rem",
     fontFamily: "Yellowtail",
     marginTop: 20,
     textShadow: "2px 2px #ccc"
