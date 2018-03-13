@@ -10,7 +10,8 @@ const style = {
   buttonStyle: {
     backgroundColor: "#fff",
     marginRight: 5,
-    color: "#000"
+    color: "#000",
+    fontFamily: "serif"
   },
   styleHeader: {
     fontSize: "6rem",
@@ -21,6 +22,15 @@ const style = {
   imgStyle: {
     maxWidth: 70,
     marginBottom: -20
+  },
+  styleRunner: {
+    backgroundColor: "#009E4E",
+    marginRight: 5,
+    color: "#fff",
+    
+  },
+  divStyle: {
+    textAlign: "right"
   }
 }
 
@@ -28,15 +38,18 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1 style={style.styleHeader}><strong>Errands</strong>NOW!</h1>
+        <h1 style={style.styleHeader}><strong>Errands</strong>NOW</h1>
         <div style={style}>
           <p><img style={style.imgStyle} src={require("../../images/check.svg")} alt="check" /> Life is busy.</p>
           <p><img style={style.imgStyle} src={require("../../images/check.svg")} alt="check" /> We can help.</p>
           <p><img style={style.imgStyle} src={require("../../images/check.svg")} alt="check" /> Give us your errand today.</p>
           <Link to="/login" style={style.buttonStyle} className="mdc-button mdc-button--raised">Log In</Link>
           <Link to="/newuser" style={style.buttonStyle} className="mdc-button mdc-button--raised">New User</Link>
-          <p>Runners Page</p>
-          <Link to="/runner" style={style.buttonStyle} className="mdc-button mdc-button--raised">Runners</Link>
+        </div>
+        <div style={style.divStyle}>
+          <br />
+          <br />
+          <Link to="/runner" style={style.styleRunner} className="mdc-button mdc-button--raised">Errand Runners</Link>
         </div>
       </div>
     );
